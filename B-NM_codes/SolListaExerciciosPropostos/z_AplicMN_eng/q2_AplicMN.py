@@ -22,7 +22,7 @@ y = df.valor_mil_rs.to_numpy(dtype=np.float32)
 
 a=RegLinRegPol(x,y)
 erros=[]
-for i in range(1,5):
+for i in range(1,15):
     modelo = a.GerarModelo(grau=i)
     a.CalcErros(modelo)
     a.ExibirGraf(modelo)
