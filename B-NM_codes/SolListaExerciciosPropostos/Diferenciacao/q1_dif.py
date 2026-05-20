@@ -9,7 +9,7 @@ Considere a função $f(x) = x^3$. Calcule numericamente a derivada primeira no 
 Compare os resultados com a derivada exata (analítica) e expresse os erros relativo e absoluto.
 
 """
-
+#%%
 import numpy as np
 
 def f(x):
@@ -59,3 +59,4 @@ analisar_conjunto(x0, h=1)
 
 # Conjunto 2: x = 2.75, 3, 3.25 → h = 0.25
 analisar_conjunto(x0, h=0.25)
+# %%
