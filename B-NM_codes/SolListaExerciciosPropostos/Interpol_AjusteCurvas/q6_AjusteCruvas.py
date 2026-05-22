@@ -70,9 +70,9 @@ def erro_absoluto(real, aprox):
 x = np.array([8, 2, 11, 5, 1, 9, 4, 12, 7, 3, 10, 6])
 y = np.array([64, 4, 121, 25, 1, 81, 16, 144, 49, 9, 100, 36])
 
-p = lagrange2(x, y)
+modelo = lagrange2(x, y)
 xp = 2.5
-yp = p(xp)
+yp = modelo(xp)
 
 # valor real (considerando f(x) =x²)
 real = xp**2
@@ -81,7 +81,7 @@ erro = erro_absoluto(real, yp)
 # Resultados
 # ---------------------------------------------
 print("\nPolinômio p(x):")
-print(p)
+print(modelo)
 print(f"f({xp}) ≈ {yp:.6f}")
 print(f"Valor real = {real:.6f}")
 print(f"Erro = {erro:.6e}")
@@ -90,7 +90,7 @@ print(f"Erro = {erro:.6e}")
 # Gráfico comparativo
 # ---------------------------------------------
 x_plot = np.linspace(x.min(), x.max())
-y_plot = p(x_plot)
+y_plot = modelo(x_plot)
 
 plt.figure()
 plt.plot(x, y, 'o', label='Dados')

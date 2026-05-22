@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class RegLinRegPol():
-    def __init__(self,x,y,grau=1):
+    def __init__(self,x,y):
         self.x = x
         self.y = y
 
@@ -42,13 +42,16 @@ class RegLinRegPol():
 
 # -------------------------------------------------------
 # Simular
+
 # x=[0,1,2,3,4]
 # y=[1.1,2,2.9,4.2,4.8]
+
 # a=RegLinRegPol(x,y)
-# for i in range(5):
+# for i in range(1,5):
 #     modelo = a.GerarModelo(i)
 #     a.CalcErros(modelo)
+#     a.ExibirGraf(modelo)
 # modelo = a.GerarModelo(exibir=1,grau=2)
 # a.CalcErros(modelo)
 # a.EstimarValor(modelo,2.5356)
-# a.ExibirGraf(modelo)
+# %%
