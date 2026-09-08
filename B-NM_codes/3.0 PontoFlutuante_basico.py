@@ -6,7 +6,7 @@ inteiro para a sua representação em ponto flutuante binário, seguindo o padr�
 IEEE 754 nos formatos 32 bits (simples precisão) e 64 bits (dupla precisão).
 @author: Jonatha Costa
 """
-num=83
+num=66.25
 # 01. Encontrar expoente para o formato 1,ddddd x 2^bbb
 for i in range(-10,10):
     if num<pow(2,i): # 'i' é o primeiro expoente que passa num, logo usar-se i-1
