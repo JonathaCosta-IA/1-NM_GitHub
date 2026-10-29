@@ -31,14 +31,14 @@ Ajuste:
     O método mais comum para encontrar a linha de melhor ajuste é o método dos 
     mínimos quadrados, que minimiza a soma dos quadrados dos resíduos:
            
-         SSE =  \sum(i=0 ^n) ​(yi​−y^​i​)2 
+         SSE =  \sum(i=0^n) ​(yi​−y^​i​)2 
 
     em que yi​ são os valores observados e y^i​ são os valores previstos pela 
     linha de regressão.
 
 Avaliação do Modelo
 
-    Coeficiente de Determinação R2R2: Mede a proporção da variabilidade total 
+    Coeficiente de Determinação R2: Mede a proporção da variabilidade total 
     de y que é explicada pelo modelo. 
     Um R2 próximo de 1 indica que o modelo explica bem os dados.
 
