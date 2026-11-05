@@ -122,8 +122,11 @@ if __name__=="__main__":
     # Ponto de interpolação e vetores de entrada x,y
 
     x=np.array([1,2,4,5,7,8]); y=np.array([52,5,-5,-40,10,20]) 
-    p=3; 
+    p=6.35; 
     
+    # x=np.array([0,1,2,3])
+    # y=np.array([1,3,2,5])
+    # p=1.5
     # Resultado da interpolação do ponto 'p'
     Yint= IntPolLagr(x,y,p)
     print('A aproximação encontrada para f(%.2f) = %.3f'%(p,Yint))   
