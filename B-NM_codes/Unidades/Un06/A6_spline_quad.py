@@ -92,6 +92,9 @@ def spline_quad(x,y,xint):
     ##**************************************%***************************************
     j=intervalo-1
     yint=coef[j]*xint**2 + coef[j+1]*xint + coef[j+2]
+    
+    print(A.shape, B.shape)
+    print(A)
     return yint
 
 # =============================================================================
@@ -100,7 +103,7 @@ if __name__ == "__main__":
     xint=12.7    
     yint=spline_quad(x,y,xint)
     print('\nA aproximação encontrada para f(%.1f) = %.2f'%(xint,yint))
-    from B1_fun_aux import graph_sp
-    graph_sp(x,y,xint,yint,'quadrática')
+    # from B1_fun_aux import graph_sp
+    # graph_sp(x,y,xint,yint,'quadrática')
         
 #%%

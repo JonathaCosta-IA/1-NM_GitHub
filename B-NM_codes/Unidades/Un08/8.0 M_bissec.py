@@ -19,7 +19,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-def calc_bissec(f,a,b,imax,tol,graph=1):  
+def calc_bissec(f,a,b,imax,tol=1e-6,graph=0):  
+    
+    """
+    O autor deste método utiliza tol = 1e-6.
+    """
     print(150*'-')
     print(
     f"{'iteração':>0}"
@@ -76,7 +80,7 @@ if __name__== "__main__":
 
     f= lambda x: 8-4.5*(x - np.sin(x))    # ou def fun(x): ...
     a, b = -20, 30
-    calc_bissec(f,a,b,imax=500,tol=1e-6,graph=1)  
+    calc_bissec(f,a,b,imax=500)  
   
 
 
